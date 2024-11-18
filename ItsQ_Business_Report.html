@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>잇츠큐 주간 비즈니스 리포트</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .header {
+      background: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .section {
+      padding: 20px;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #343a40;
+    }
+
+    .stats-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      flex: 1;
+      background: #e9ecef;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .stat h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #007bff;
+    }
+
+    .stat p {
+      margin: 10px 0 0;
+      font-size: 16px;
+      color: #495057;
+    }
+
+    .footnote {
+      font-size: 12px;
+      color: #6c757d;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .chart {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .chart canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #6c757d;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .section ul li {
+      margin-bottom: 10px;
+    }
+
+    .section ul li a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .section ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>잇츠큐 주간 비즈니스 리포트</h1>
+    </div>
+    <div class="section">
+      <h2>1. 비즈니스 분석</h2>
+      <div class="stats-container">
+        <div class="stat">
+          <h3>전체 매출</h3>
+          <p>₩150,000,000</p>
+        </div>
+        <div class="stat">
+          <h3>신규 고객</h3>
+          <p>520명</p>
+        </div>
+        <div class="stat">
+          <h3>프로모션 ROI</h3>
+          <p>40%</p>
+          <div class="footnote">* ROI (Return on Investment): 투자 대비 수익률</div>
+        </div>
+      </div>
+      <div class="feedback">
+        <h3>비즈니스 피드백</h3>
+        <p>현재 매출 증가는 안정적이며, 신규 고객 확보를 위한 디지털 캠페인 강화가 추천됩니다.</p>
+      </div>
+    </div>
+    <div class="section">
+      <h2>2. 프로모션 성과</h2>
+      <div class="chart">
+        <canvas id="promotionChart"></canvas>
+      </div>
+    </div>
+    <div class="section">
+      <h2>3. 유사 프로모션 사례</h2>
+      <ul>
+        <li>프랜차이즈 A: 첫 구매 20% 할인으로 신규 고객 30% 증가 <a href="https://example.com/article1" target="_blank">[기사 보기]</a></li>
+        <li>프랜차이즈 B: SNS 이벤트 참여로 매출 15% 상승 <a href="https://example.com/article2" target="_blank">[기사 보기]</a></li>
+        <li>프랜차이즈 C: 시즌 한정 메뉴로 월 매출 25% 증가 <a href="https://example.com/article3" target="_blank">[기사 보기]</a></li>
+        <li>프랜차이즈 D: 멤버십 가입 프로모션으로 고객 충성도 증가 <a href="https://example.com/article4" target="_blank">[기사 보기]</a></li>
+        <li>프랜차이즈 E: 고객 리뷰 캠페인으로 브랜드 인지도 20% 상승 <a href="https://example.com/article5" target="_blank">[기사 보기]</a></li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>4. 정부정책 요약</h2>
+      <ul>
+        <li>중소기업 세제 혜택 확대 <a href="https://example.com/policy1" target="_blank">[정책 보기]</a></li>
+        <li>친환경 포장재 사용 기업 보조금 <a href="https://example.com/policy2" target="_blank">[정책 보기]</a></li>
+        <li>디지털 전환을 위한 스마트 시스템 지원 <a href="https://example.com/policy3" target="_blank">[정책 보기]</a></li>
+        <li>고용창출 기업 인센티브 확대 <a href="https://example.com/policy4" target="_blank">[정책 보기]</a></li>
+        <li>지역 중소기업 지원 정책 강화 <a href="https://example.com/policy5" target="_blank">[정책 보기]</a></li>
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; 2024 비즈니스 인사이트 주식회사
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Chart.js Example with Before/After Comparison
+    const ctx = document.getElementById('promotionChart').getContext('2d');
+    const promotionChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['프로모션 A', '프로모션 B', '프로모션 C'],
+        datasets: [
+          {
+            label: '프로모션 전 매출 (₩)',
+            data: [30000000, 20000000, 40000000],
+            backgroundColor: '#6c757d',
+          },
+          {
+            label: '프로모션 후 매출 (₩)',
+            data: [50000000, 30000000, 70000000],
+            backgroundColor: '#007bff',
+          },
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: true }
+        },
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
